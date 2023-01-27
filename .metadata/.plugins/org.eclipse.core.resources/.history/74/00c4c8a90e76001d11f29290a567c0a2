@@ -1,0 +1,27 @@
+package HellSelenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OpenFirefox {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.geckodriver.driver" ,".\\geckodriver-v0.32.0-win-aarch64\\geckodriver.exe");
+		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		//driver.navigate().to("https://session.npav.net/");
+		
+		driver.get("https://www.google.com/search?q=india+vs+bangladesh+live+score+today+match+2022&ei=3lmQY5r5O6SH4-EP0_CyyA8&oq=india+vs+bangladesh+cricket+match&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgcIABCwAxBDMgcIABCwAxBDSgQIQRgASgQIRhgAUABYAGDkDWgBcAF4AIABAIgBAJIBAJgBAMgBCsABAQ&sclient=gws-wiz-serp#sie=m;/g/11thqszb_2;5;/m/021q23;dt;fp;1;;;");
+		Thread.sleep(3000);
+		driver.navigate().to("https://www.google.com/search?q=india+vs+bangladesh+live+score+today+match+2022&ei=3lmQY5r5O6SH4-EP0_CyyA8&oq=india+vs+bangladesh+cricket+match&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgcIABCwAxBDMgcIABCwAxBDSgQIQRgASgQIRhgAUABYAGDkDWgBcAF4AIABAIgBAJIBAJgBAMgBCsABAQ&sclient=gws-wiz-serp");
+		driver.navigate().forward();
+		//driver.manage().deleteAllCookies();
+		//driver.navigate();
+		//Thread.sleep(3000);
+		//driver.close();
+	}
+
+}

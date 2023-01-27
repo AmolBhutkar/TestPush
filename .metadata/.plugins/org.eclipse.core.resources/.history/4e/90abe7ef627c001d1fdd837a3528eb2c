@@ -1,0 +1,26 @@
+package HellSelenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Gana {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", ".//drivers//chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.globalsqa.com/cheatsheets//");
+		driver.manage().window().maximize();
+		//List<WebElement> count=driver.findElement(By.xpath("//*[@id=\"post-6881\"]/div/div/div/ul/li[1]"));
+		List<WebElement>count=driver.findElements(By.xpath("//*[@id=\"post-6881\"]/div/div/div/ul/li[1]"));
+		System.out.println("Total Elements are: " + count.size());
+		
+		
+
+	}
+
+}

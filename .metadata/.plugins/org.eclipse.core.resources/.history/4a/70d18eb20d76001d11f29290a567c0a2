@@ -1,0 +1,24 @@
+package HellSelenium;
+
+import org.openqa.selenium.WebDriver;//userd for import the classes\interface
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Openurl2 {
+
+	public static void main(String[] args) throws InterruptedException {
+	System.setProperty("WebDriver.chrome.driver" , "E:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+	/* 1.System. is predefine class 
+	   2.setproperty is method of system class that used for set property
+	   3. WebDriver.chrome.driver is a property of chrome browser */
+	WebDriver driver=new ChromeDriver();//WebDriver is a Interface that inherit property of ChromeDriver  driver is reference name (new is a keywoed)
+	driver.get("https://session.npav.net/");
+	//driver.get("https:\\google.com");//get () is method used for launching url
+Thread.sleep(2000);
+	driver.manage().window().maximize();
+	//driver.findElement("")
+	
+	}
+
+}
+
+/*  Selenium methods get(),getCurrentURL(),getTitle(),fineElement(),close(),quite)*/

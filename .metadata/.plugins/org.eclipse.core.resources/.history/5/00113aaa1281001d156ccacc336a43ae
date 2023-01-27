@@ -1,0 +1,11 @@
+package Demo;
+
+public class GetUrls {
+	
+	public static void main(String arg[]) {
+			
+		System.setProperty("webdriver.chrome.driver",".//drivers//chromedriver.exe");
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package HellSelenium;
+
+public class OpenUrls {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

@@ -1,0 +1,36 @@
+package HellSelenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Face {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://session.npav.net/");
+		
+		driver.findElement(By.xpath("//input[@id='TxtUserId']")).sendKeys("Amol");
+		
+		driver.findElement(By.xpath("//input[@id='TxtPassword']")).sendKeys("Amol");
+		//WebElement pass=driver.findElement(By.id("TxtPassword"));
+		//pass.sendKeys("Amol");
+		Thread.sleep(2000);
+		//driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
+		WebElement cli=driver.findElement(By.id("btnLogin"));
+		cli.click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@class='btn btn-info btn-block btn-flat margin-top-10'")).click();
+		driver.quit();
+	}
+
+}
+/* 
+    // :	Select current node.
+    Tagname: Tagname of the particular node like input.
+    @:	Select attribute.
+    Attribute:	Attribute name of the node.
+    Value:	Value of the attribute.
+*/

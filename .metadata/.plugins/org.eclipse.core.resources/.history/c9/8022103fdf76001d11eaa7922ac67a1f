@@ -1,0 +1,34 @@
+package HellSelenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SessionLogin {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://session.npav.net/");
+		driver.findElement(By.id("TxtUserId"));
+		WebElement userId=driver.findElement(By.id("TxtUserId"));
+		userId.sendKeys("Amol");
+		
+		WebElement pass=driver.findElement(By.id("TxtPassword"));
+		pass.sendKeys("Amol");
+		WebElement submit=driver.findElement(By.id("btnLogin"));
+		submit.click();
+		
+		WebElement cl=driver.findElement(By.tagName("button"));
+		cl.click();
+		
+		Thread.sleep(1000);
+		WebElement viewReportElement=driver.findElement(By.id("ContentPlaceHolder1_HyperlinkWeekly"));
+		
+		viewReportElement.click();
+		//driver.quit();
+	}
+
+}

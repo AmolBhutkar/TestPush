@@ -1,0 +1,20 @@
+package HellSelenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OpenFirefox {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.geckodriver.driver" ,".\\geckodriver-v0.32.0-win-aarch64\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("https://session.npav.net/");
+		Thread.sleep(3000);
+		driver.manage().window().maximize();
+		//driver.manage().deleteAllCookies();
+		//driver.navigate();
+		Thread.sleep(3000);
+		driver.close();
+	}
+
+}
