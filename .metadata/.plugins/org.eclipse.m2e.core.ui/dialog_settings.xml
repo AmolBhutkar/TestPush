@@ -3,6 +3,10 @@
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
 			<item value="C:\Users\NPAV\eclipse-workspace\Selenium"/>
+			<item value="C:\Users\NPAV\eclipse-workspace\MavenPro"/>
+			<item value="C:\Users\NPAV\eclipse-workspace\Programs"/>
+			<item value="C:\Users\NPAV\eclipse-workspace\Selenium\src\HellSelenium\Msrtc.java"/>
+			<item value="C:\Users\NPAV\eclipse-workspace\testArtifactId\src\main\java\testpackage"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -14,6 +18,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -44,12 +49,19 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="testGroupId"/>
+			<item value="1.0"/>
+			<item value="Amol"/>
+			<item value="MavenProject1"/>
+			<item value="MavenPr"/>
 		</list>
 		<list key="name">
+			<item value="MyProject"/>
 		</list>
 		<list key="artifactId">
-			<item value="testArtifactId"/>
+			<item value="1.0"/>
+			<item value="MavenPr"/>
+			<item value="MavenProj1"/>
+			<item value="MavenPro"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -74,5 +86,26 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="531"/>
+		<item key="x" value="323"/>
+		<item key="y" value="14"/>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Selenium"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Selenium"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
 	</section>
 </section>

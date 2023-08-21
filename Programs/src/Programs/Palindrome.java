@@ -8,7 +8,7 @@ public class Palindrome {
 		String str=sb.reverse().toString();
 		
 		if(str.equals(s)) {
-			System.out.println("Strring Paslindrom");
+			System.out.println("String is Palindrom");
 		}else {
 			System.out.println("String not Palindrome");
 		}

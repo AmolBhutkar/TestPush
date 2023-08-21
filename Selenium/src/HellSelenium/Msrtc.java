@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Msrtc {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://msrtc.maharashtra.gov.in/");
 		driver.manage().window().maximize();
@@ -30,13 +30,15 @@ public class Msrtc {
 		
 		//Thread.sleep(3000);
 		login.click();
+	//	List<WebElement> act=driver.findElements(By.xpath("/html/body/div[4]/ul/li"));
+		
 		List<WebElement> act=driver.findElements(By.xpath("/html/body/div[4]/ul/li"));
-		System.out.println("Total list:" + act.size());
+		System.out.println("Total list1:" + act.size());
 		String str="SWR (SWARGATE, PUNE)";
-		//for(int i=0;i<act.size();i++)
-		//{
-		//	System.out.println(act.get(i).getText());
-		//}
+		for(int i=0;i<act.size();i++)
+		{
+			System.out.println(act.get(i).getText());
+		}
 		for(int i=0;i<act.size();i++)
 		{
 			//System.out.println(act.get(i).getText());

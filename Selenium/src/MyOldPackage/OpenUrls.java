@@ -2,6 +2,7 @@ package MyOldPackage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class OpenUrls {
@@ -19,14 +20,13 @@ public class OpenUrls {
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("/html/body/div[1]/section[1]/div/div[1]/div[1]/a/img")).click();
-		String title=driver.getTitle();
-		System.out.println(title);
+		driver.switchTo().newWindow(WindowType.TAB);
+		driver.get("https://www.google.com");
+		Thread.sleep(2000);
 		
-		String src=driver.getPageSource();
-		System.out.println(src);
-		
-		
+		driver.switchTo().newWindow(WindowType.WINDOW);
+		driver.get("https://www.npav.net");
+		Thread.sleep(2000);
 	}
 
 }

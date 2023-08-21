@@ -38,7 +38,7 @@ public class WindowHandle {
 		Thread.sleep(2000);
 		String act=driver.getTitle();
 		String exp="Welcome to Indian Railway Passenger Reservation Enquiry";
-		assertEquals(act, exp,"not validate");
+		//assertEquals(act, exp,"not validate");
 		//assert.assertEquals(act, exp);
 		System.out.println(driver.getTitle());
 
